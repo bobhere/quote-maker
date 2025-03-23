@@ -14,10 +14,13 @@ fi
 
 # 检查必要的包是否安装
 echo "正在检查环境..."
-python3 -m pip install -q PySide6 openpyxl markdown || {
+python3 -m pip install -q PySide6 openpyxl markdown pandas || {
     echo "错误：安装依赖包失败"
     exit 1
 }
+
+# 创建fonts和docs目录（如果不存在）
+mkdir -p fonts docs
 
 # 启动程序
 echo "正在启动 Quote Maker..."
