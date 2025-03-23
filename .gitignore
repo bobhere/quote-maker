@@ -37,4 +37,5 @@ logs/
 *.swo
 
 # 应用程序特定
-*.app/ 
+*.app/ logs/
+outputs/
