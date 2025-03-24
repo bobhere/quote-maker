@@ -671,8 +671,8 @@ class StyleTab(QWidget):
                     painter.end()
                     
                     # 保存图片
-                    output_path = os.path.join(export_dir, f"导出图片_{i+1}.png")
-                    success = image.save(output_path, "PNG", quality=100)
+                    output_path = os.path.join(export_dir, f"导出图片_{i+1}.jpg")
+                    success = image.save(output_path, "JPEG", quality=85)
                     
                     if not success:
                         raise Exception(f"保存图片 {i+1} 失败")

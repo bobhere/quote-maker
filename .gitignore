@@ -20,6 +20,35 @@ wheels/
 .installed.cfg
 *.egg
 
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific
+outputs/
+*.log
+*.xlsx
+*.jpg
+*.png
+*.jpeg
+*.gif
+*.ico
+*.ttf
+*.otf
+
+# OS specific
+.DS_Store
+Thumbs.db
+
 # 日志文件
 logs/
 *.log
@@ -29,12 +58,6 @@ logs/
 .AppleDouble
 .LSOverride
 ._*
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
 
 # 应用程序特定
 *.app/ logs/
